@@ -10,8 +10,6 @@ void setup() {
 
    Serial.begin(9600);
 
-   while (!Serial);
-
    if ( ! SigFox.begin() ) {
      Serial.println("Error ... rebooting");
      NVIC_SystemReset();
